@@ -1,0 +1,10 @@
+.head{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 410px){
+    .head{
+        font-size: 1rem;
+    }
+}

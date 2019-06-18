@@ -1,0 +1,32 @@
+<div class="interface">
+  <div class="first-row">
+    <app-project-dropdown (NomeDoProjeto)="SalvarNome($event)"></app-project-dropdown>
+  </div>
+  <div class="project-status">
+    <div class="col shadow">
+      <app-projects-chart [NomeDoProjeto]="NomeDoProjeto" class="chart "></app-projects-chart>
+    </div>
+    <div class="col shadow">
+      <app-remain-chart [NomeDoProjeto]="NomeDoProjeto" class="chart "></app-remain-chart>
+    </div>
+    <div class="col shadow">
+      <app-spent-chart [NomeDoProjeto]="NomeDoProjeto" class="chart "></app-spent-chart>
+    </div>
+    <div class="col shadow">
+      <div class="chart">
+        <div class="dashboard-chart">
+          <div class="days-left allign">
+            {{daysLeft}}
+          </div>
+          Dias restantes para o final do projeto
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="employees shadow">
+      Desempenho por funcionario:
+      <app-employees></app-employees>
+    </div>
+  </div>
+</div>

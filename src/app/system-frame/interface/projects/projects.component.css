@@ -1,0 +1,174 @@
+table{
+    box-shadow: none;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.badge{
+    width: 7rem;
+    height: 1.5rem;
+    border-radius: 70px;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    align-items: center;
+    font-weight: bold;
+    background-color: #ebebeb;
+}
+
+td.mat-cell, td.mat-footer-cell, th.mat-header-cell{
+    padding: 1rem;   
+}
+
+td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:first-of-type{
+    z-index: 1 !important;
+}
+
+.container-left{
+    width: 35%;
+    padding: 0.4rem;
+}
+
+.container-right{
+    width: 65%;
+}
+
+.sub{
+    display: flex;
+    align-items: flex-start;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 1.5rem;
+}
+
+#cadastro-projeto .row{
+    width: 100% ;
+}
+
+#cadastro-projeto .col{
+    width: 50% ;
+}
+
+.space{
+    width: 3rem;
+}
+
+#nome-projeto{
+    width: 65%;
+}
+
+.adjust{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#brief{
+    width: 100%;
+}
+
+.mat-table{
+    width: 100%;
+}
+
+.full{
+    width: 100%;
+}
+
+.Andamento {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #00970d;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.Atrasado {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ff0000;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.Concluído {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #0011ff;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+@media only screen and (max-width: 1200px) {
+    td.mat-cell, td.mat-footer-cell, th.mat-header-cell{
+        padding: 0.2rem;   
+    }
+
+    .container-left{
+        padding: 0rem;
+        font-size: 0.85rem;
+    }
+
+    .badge{
+        width: 6rem;
+        height: 1.5rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .mat-form-field{
+        width: 100%;
+        padding: 0;
+    }
+
+    .container-left{
+        width: 100%;
+    }
+
+    .container-right{
+        width: 100%;
+        padding: 1rem;
+        height: 42rem;
+        min-height: 42rem;
+        max-height: 42rem;
+    }
+
+    .mat-table{
+        font-size: 1rem;
+    }
+
+    .badge{
+        width: 7rem;
+        font-size: 0.8rem;
+    }
+
+    .sub{
+        display: block;
+        font-size: 1rem;
+        height: 2rem !important;
+    }
+
+    .head{
+        height: 3rem !important;
+    }
+
+    .space{
+        width: 0rem;
+    }
+
+    .col{
+        width: 100% !important;
+        display: block !important;
+    }
+    
+    #nome-projeto{
+        width: 100%;
+    }
+    
+    .row{
+        display: block !important; 
+    }
+}

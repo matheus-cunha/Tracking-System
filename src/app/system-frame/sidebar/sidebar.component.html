@@ -1,0 +1,36 @@
+<div class="sidebar shadow">
+  <ul>
+    <li>
+      <a [routerLink]="[{ outlets: { 'content': ['dashboard'] } }]">
+        <i class="fas fa-chart-line"></i>
+        <span class="side-text">
+          Dashboard
+        </span>
+      </a> 
+    </li>
+    <li>
+      <a [routerLink]="[{ outlets: { 'content': ['projects'] } }]">
+        <i class="fas fa-atlas"></i>
+        <span class="side-text">
+          Cadastrar Projeto
+        </span>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="[{ outlets: { 'content': ['users'] } }]">
+        <i class="fas fa-address-book"></i>
+        <span class="side-text">
+          Cadastrar Usuário
+        </span>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="[{ outlets: { 'content': ['register']}}]">
+        <i class="fas fa-calendar-alt"></i>
+        <span class="side-text">
+          Apontar Horas
+        </span>
+      </a>
+    </li>
+  </ul>
+</div>

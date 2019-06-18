@@ -1,0 +1,77 @@
+<div class="interface">
+  <div class="grid">
+    <div class="row head">
+      <app-project-dropdown (NomeDoProjeto)="SalvarNome($event)"></app-project-dropdown>
+    </div>
+    <div class="row">
+      <div class="col container-left">
+        <p>Registro de horas:</p><br>
+        <mat-form-field>
+          <input matInput placeholder="Projeto" [(ngModel)]="projeto" disabled>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput [matDatepicker]="picker" placeholder="Data">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field>           
+          <input matInput placeholder="Horário de início" >
+        </mat-form-field>          
+        <mat-form-field>           
+          <input matInput placeholder="Horário do termino" >
+        </mat-form-field>         
+        <mat-form-field>           
+          <input matInput placeholder="Atividade" [(ngModel)]="atividade" >
+        </mat-form-field>  
+        <mat-form-field>
+          <textarea matInput #message maxlength="50" placeholder="Observação"></textarea>
+          <mat-hint>{{message.value.length}} / 50</mat-hint>
+        </mat-form-field>
+        <div class="adjust">
+          <button mat-raised-button class="button">Registrar</button>
+        </div>
+      </div>
+      <div class="col container-right" id="mat-table">  
+        <mat-table #table [dataSource]="dataSource | async" [class.isMobile]="isMobile">
+          <ng-container matColumnDef="date">
+            <mat-header-cell *matHeaderCellDef> Data </mat-header-cell>
+            <mat-cell *matCellDef="let element"> 
+              <span class="mobile-label">Data:</span>
+              {{element.date}} 
+            </mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="start">
+            <mat-header-cell *matHeaderCellDef> Inicio </mat-header-cell>
+            <mat-cell *matCellDef="let element"> 
+              <span class="mobile-label">Inicio:</span>
+              {{element.start}} 
+            </mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="end">
+            <mat-header-cell *matHeaderCellDef> Final </mat-header-cell>
+            <mat-cell *matCellDef="let element"> 
+              <span class="mobile-label">Final:</span>
+              {{element.end}} 
+            </mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="task">
+            <mat-header-cell *matHeaderCellDef> Atividade </mat-header-cell>
+            <mat-cell *matCellDef="let element"> 
+              <span class="mobile-label">Atividade:</span>
+              {{element.task}} 
+            </mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="obs">
+            <mat-header-cell *matHeaderCellDef> Observação </mat-header-cell>
+            <mat-cell *matCellDef="let element"> 
+              <span class="mobile-label">Observação:</span>
+              {{element.obs}} 
+            </mat-cell>
+          </ng-container>
+          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+        </mat-table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,90 @@
+<div class="interface">
+  <div class="grid">
+    <div class="row head">
+      Projetos em andamento
+    </div>
+    <div class="row">
+      <div class="col container-left">
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+          <ng-container matColumnDef="project">
+            <th mat-header-cell *matHeaderCellDef> Projeto </th>
+            <td mat-cell *matCellDef="let element"> {{element.project}} </td>
+          </ng-container>
+          <ng-container matColumnDef="leader">
+            <th mat-header-cell *matHeaderCellDef> Responsável </th>
+            <td mat-cell *matCellDef="let element"> {{element.leader}} </td>
+          </ng-container>
+          <ng-container matColumnDef="status">
+            <th mat-header-cell *matHeaderCellDef> Status </th>
+            <td mat-cell *matCellDef="let element"> 
+              <div class="badge" [ngClass]="element.status">
+                {{element.status}}
+              </div>
+            </td>
+          </ng-container>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </div>
+      <div class="col container-right" >  
+        <div class="row sub">
+        Cadastro de projeto
+        </div>
+        <div class="form" id="cadastro-projeto">
+          <div class="row">
+            <mat-form-field id="nome-projeto">
+              <input matInput placeholder="Nome do projeto">
+            </mat-form-field>
+          </div>
+          <div class="row">
+            <div class="col">
+              <mat-form-field class="full">
+                <input matInput placeholder="Budget disponível" >
+              </mat-form-field>
+            </div>
+            <div class="space"></div>
+            <div class="col">
+              <mat-form-field class="full">
+                <input matInput placeholder="Total de horas">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <mat-form-field class="full">
+                <input matInput placeholder="Responsável">
+              </mat-form-field>
+            </div>
+            <div class="space"></div>
+            <div class="col">
+              <mat-form-field class="full">
+                <input matInput placeholder="Arquiteto">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <mat-form-field class="full">
+                <input matInput placeholder="Data de inicio">
+              </mat-form-field>
+            </div>
+            <div class="space"></div>
+            <div class="col">
+              <mat-form-field class="full">
+                <input matInput placeholder="Previsão de entrega">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row" >
+            <mat-form-field id="brief">
+              <input matInput placeholder="Briefing">
+            </mat-form-field>
+          </div>
+          <div class="adjust">
+            <button mat-raised-button class="button">Registrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

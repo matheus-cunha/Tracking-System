@@ -1,0 +1,17 @@
+<div class="dashboard-chart">
+  <ngx-charts-pie-chart
+    [view]="view"
+    [scheme]="colorScheme"
+    [results]="value | async"
+    [legend]="showLegend"
+    [explodeSlices]="explodeSlices"
+    [labels]="showLabels"
+    [doughnut]="doughnut"
+    [gradient]="gradient"
+    >
+  </ngx-charts-pie-chart>
+  <div class="chart-label">
+    {{label}}
+  </div>
+  Total de horas gastas
+</div>

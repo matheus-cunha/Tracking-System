@@ -1,0 +1,89 @@
+.navbar{
+    background-color: #427ab6;
+    color: #fff;
+    height: 3rem;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5rem;
+}
+
+.welcome{
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.branding{
+    background-image: url('../../../assets/imgs/logo-off.png');
+    background-position: center;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0.5rem;
+    left: 4rem;
+    height: 2rem;
+    width: 9rem;
+}
+
+.logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 3rem;
+    color: #fff;
+    margin-left: 2rem;
+}
+
+.logout:hover{
+    background-color: #b8d7f8;
+    color: #0f3155;
+    transition: 0.15s;
+}
+
+@media only screen and (max-width: 900px) {
+    .navbar{
+        padding-right: 4rem;
+    }
+    
+    .welcome{
+        font-size: 0.8rem;
+    }
+    
+    .branding{
+        left: 3rem;
+        height: 1.8rem;
+        width: 8rem;
+    }
+    
+    .logout{
+        width: 5rem;
+        height: 3rem;
+        margin-left: 2rem;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .logout{
+        width: 5rem;
+        height: 3rem;
+        margin-left: 1rem;
+    }
+
+    .navbar{
+        padding-right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .welcome{
+        visibility: hidden;
+        position: absolute;
+    }
+}

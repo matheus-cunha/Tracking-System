@@ -1,0 +1,136 @@
+.project-status{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0 2rem 0;
+}
+
+.col{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 16rem;
+    height: 18rem;
+    min-width: 16rem;
+    font-size: 1.2rem;
+    margin: 0 0.5rem 0 0.5rem;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    padding: 1rem;
+    flex: 1;
+}
+
+.col:first-child {
+    margin-right: 0.5rem;
+    margin-left: 0;
+}
+
+.col:last-child {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+.days-left{
+    font-size: 8rem;
+    font-weight: bold;
+    color: rgb(17, 57, 99);
+    height: 9rem;
+}
+
+.employees{
+    background-color: white;
+    height: 28rem;
+    width: 100%;
+    padding: 1rem;
+    margin: 0rem; 
+}
+
+.first-row{
+    height: 1.5rem;
+}
+
+.chart{
+    width: 15rem;
+    min-width: 15rem;
+    height: 15rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.allign{
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: white;
+    height: 28rem;
+    width: 100%;
+    padding: 1rem;
+    margin: 0 1.5rem 0 1rem; 
+}
+
+@media only screen and (max-width: 900px) {
+    .project-status{
+        flex-flow: row wrap;
+    }
+
+    .chart{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .col{
+        height: 20rem; 
+        margin: 1rem 0rem 1rem 0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .col:first-child {
+        margin-right: 1rem;
+        margin-left: 0;
+    }
+    
+    .col:last-child {
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+
+    .employees{
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: 30rem;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 696px) {
+    .col{
+        width: 100%;
+        height: 18rem;
+        min-width: 16rem;
+        margin: 1rem 0rem 1rem 0rem;
+    }
+
+    .col:first-child {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    .col:last-child {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .container{
+        width: 92%;
+        margin: 1rem; 
+    }
+}
