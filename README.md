@@ -71,7 +71,7 @@ Por menor que seja o pull request, agradeço desde já sua contribuição. Todo 
 
 Me siga nas redes sociais! 
 
-[Website https://matheus-cunha.github.io/](https://matheus-cunha.github.io/)
+[Website](https://matheus-cunha.github.io/)
 
 [Pinterest](https://br.pinterest.com/portifoliomatheuscunha/)
 
