@@ -1,4 +1,4 @@
-<a href=""><img src="./src/assets/imgs/logo.png" alt="Main Logo" height="160"></a>
+<img src="./src/assets/imgs/logo.png" alt="Main Logo" height="160"></a>
 
 # Tracking System.
 
@@ -9,7 +9,7 @@
 ![Build Status](https://img.shields.io/appveyor/ci/thiagoloureiro/netcore-jwt-integrator-extension/master.svg) ![CSS Version](https://img.shields.io/badge/CSS-Vesion_3-BLUE.svg) ![Angular CLI](https://img.shields.io/badge/Angular-7.3.5-RED.svg) ![HTML](https://img.shields.io/badge/HTML-Vesion_5-ORANGE.svg)
 
 ---
-<div>
+<div style="width: 100%;">
 <img src="./src/assets/animation.gif" alt="Animation" style="width: 100%;">
 
 <img src="./src/assets/responsive.png" alt="Responsive" style="width: 100%;">
