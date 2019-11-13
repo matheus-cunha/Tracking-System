@@ -10,7 +10,7 @@
 
 ---
 
-<img src="./src/assets/animation.gif" alt="Animation" width="1500">
+<img src="./src/assets/animation.gif" alt="Animation" style="width: 100%;">
 
 <img src="./src/assets/responsive.png" alt="Responsive" width="1500">
 
