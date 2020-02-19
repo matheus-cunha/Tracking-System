@@ -3,7 +3,7 @@
 ![CSS Version](https://img.shields.io/badge/CSS-Vesion_3-BLUE.svg)
 ![HTML](https://img.shields.io/badge/HTML-Vesion_5-ORANGE.svg)
 
-<img src="./src/assets/banner-logo.jpg" alt="Main Logo" height="160"></a>
+<img src="./src/assets/banner-logo.jpg" alt="Main Logo" height="260"></a>
 
 # Tracking System.
 
