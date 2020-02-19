@@ -3,12 +3,11 @@
 ![CSS Version](https://img.shields.io/badge/CSS-Vesion_3-BLUE.svg)
 ![HTML](https://img.shields.io/badge/HTML-Vesion_5-ORANGE.svg)
 
-<img src="./src/assets/imgs/banner-logo.jpg" alt="Main Logo" height="160"></a>
+<img src="./src/assets/banner-logo.jpg" alt="Main Logo" height="160"></a>
 
 # Tracking System.
 
 > Este projeto foi criado utilizando uma versão do Angular Cli (https://github.com/angular/angular-cli) versão 7.3.5 e mockApi(www.mockapi.io) para interpretar os endpoints.
-> Projeto desenvolvido com intúito de registrar horas de projetos informátizados.
 
 ---
 
