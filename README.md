@@ -1,4 +1,3 @@
-![Build Status](https://img.shields.io/appveyor/ci/thiagoloureiro/netcore-jwt-integrator-extension/master.svg) 
 ![Angular CLI](https://img.shields.io/badge/Angular-7.3.5-RED.svg)
 ![CSS Version](https://img.shields.io/badge/CSS-Vesion_3-BLUE.svg)
 ![HTML](https://img.shields.io/badge/HTML-Vesion_5-ORANGE.svg)
