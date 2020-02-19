@@ -1,5 +1,4 @@
 $ cat .gitattributes
-*.js linguist-language=Angular
-*.css linguist-language=Angular
-*.ts linguist-language=Angular
-*.html linguist-language=Angular
+*.css linguist-language=Typescript
+*.ts linguist-language=Typescript
+*.html linguist-language=Typescript
