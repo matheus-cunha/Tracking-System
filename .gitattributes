@@ -1,2 +1,5 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+$ cat .gitattributes
+*.js linguist-language=Angular
+*.css linguist-language=Angular
+*.ts linguist-language=Angular
+*.html linguist-language=Angular
