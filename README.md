@@ -38,6 +38,7 @@ $ npm install
 $ ng serve
 ```
 
+Navegue até http://localhost:4200/ para ver a página compilada, se preciso atualize a mesma para poder visualizar as alterações.
 Utilizando o servidor de testes, todas as modificações do codigo serão interpretadas pelo navegador e atualizaram automaticamente.
 
 ---
